@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+ES+Deco:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-image: url(./images/b-g.avif);
+    background-size: cover;
+    color: #ffff;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    width: 420px;
+    font-size: 90px;
+    letter-spacing: 5px;
+    font-family: "cav";
+    margin: 40px 0px 10px 0px;
+}
+
+.todo-app {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 5px 3px rgba(0, 0, 0, .2);
+}
+
+.todo-app h2 {
+    font-size: 2.2rem;
+    color: #002765;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin: 30px 0px;
+    width: 95%;
+    margin-inline: auto;
+
+}
+
+input {
+    color: #ffffff;
+    font-size: 17px;
+    width: 100%;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    border-bottom: 1px solid white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, .55);
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: purple;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: .2s ease-in-out;
+}
+
+button:hover {
+    background: #ff00ff;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul li {
+    font-weight: 700;
+    list-style: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    user-select: none;
+    width: 80%;
+    min-height: 50px;
+    margin: 0 auto;
+    border-radius: 5rem;
+    cursor: pointer;
+    position: relative;
+    background: rgba(255, 255, 255, .05);
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.checked {
+    color: black;
+    font-size: 23px;
+    text-decoration: line-through;
+}
+
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+    color: #ff00ff;
+    text-align: center;
+}
+
+ul li span:hover {
+    border-radius: 30px;
+    background: purple;
+    color: white;
+}
+
+ul li iconify-icon {
+    pointer-events: none;
+    font-size: 30px;
+    margin-top: 4px;
+}
+
